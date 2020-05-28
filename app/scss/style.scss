@@ -17,6 +17,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 124px;
   }
 
   &__menu {
@@ -29,7 +30,7 @@
   }
 
   &__info {
-    margin-top: 124px;
+
     margin-left: 180px;
   }
 
@@ -44,6 +45,51 @@
     line-height: 19px;
     font-weight: 300;
     letter-spacing: 1.3px;
+  }
+
+  // TODO Сделать плавное пролистывание нумерации
+  .header__slider {
+    position: relative;
+    .slick-dots {
+      position: absolute;
+      top: 0;
+      left: 0;
+      button {
+        background-color: transparent;
+        border: none;
+        opacity: 0.2;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 13px;
+        line-height: 19px;
+        font-weight: 400;
+        color: #ffffff;
+        margin-bottom: 47px;
+        position: relative;
+        &::before {
+          content: '';
+          display: none;
+          width: 33px;
+          height: 1px;
+          background-color: #fff;
+          position: absolute;
+          left: -42px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+
+      }
+    }
+    .slick-dots .slick-active button {
+      opacity: 1;
+        &::before {
+          display: block;
+        }
+    }
+
+  }
+
+  .slick-vertical .slick-slide {
+    outline: none;
   }
 
   .btn {
