@@ -1,0 +1,63 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+@import "global";
+
+// *~~~~~~~~ Header ~~~~~~~~
+.header {
+  height: 100vh;
+  background-image: url(../img/header-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__top {
+    padding-top: 64px;
+    height: 71px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__menu {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    letter-spacing: 5.4px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  &__info {
+    margin-top: 124px;
+    margin-left: 180px;
+  }
+
+  &__info-text {
+    max-width: 344px;
+    margin-top: 43px;
+    margin-bottom: 82px;
+    margin-left: 11px;
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    line-height: 19px;
+    font-weight: 300;
+    letter-spacing: 1.3px;
+  }
+
+  .btn {
+    margin-left: 370px;
+  }
+}
+
+
+
+
+// *~~~~~~~~ Header ~~~~~~~~
+
+
+// *~~~~~~~~ Footer ~~~~~~~~
+
+
+@import "media";
